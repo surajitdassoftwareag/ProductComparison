@@ -1,0 +1,149 @@
+.inbox {
+  height: 30px;
+  width: 30px;
+  margin: 15px;
+  box-sizing: border-box;
+  background: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+
+.inbox > .fas {
+  color: white;
+  width: 20px;
+  height: 20px;
+  line-height: 30px;
+  padding-left: 6px;
+}
+
+.inbox:active {
+  background: var(--white);
+}
+
+.inbox:active > .fas{
+  color: var(--black);
+}
+
+.inbox-dropdown {
+  position: absolute;
+  top: 45px;
+  left: 10px;
+  padding: 5px;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.inbox.open + .inbox-dropdown {
+  opacity: 1;
+}
+
+.inbox-dropdown > .inbox-content {
+  min-width: 250px;
+  display: inline-block;
+  transform: translateY(-105%);
+  background: var(--white);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s;
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+.inbox.open + .inbox-dropdown > .inbox-content {
+  transform: translateY(0);
+}
+
+.inbox-content > .inbox-content-header {
+  height: 40px;
+  background: var(--primary-off);
+  line-height: 40px;
+  color: var(--white);
+  padding-left: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.inbox-content > .see-all-notification {
+  line-height: 40px;
+  height: 40px;
+  background: linear-gradient(var(--light-gray), var(--white), var(--white), var(--white), var(--light-gray));
+  color: var(--black);
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  cursor: pointer;
+  position: relative;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.see-all-notification::before {
+  content: '';
+  position: absolute;
+  border-top: 2px solid var(--black);
+  left: 15px;
+  top: 20px;
+  width: 50px;
+}
+
+.see-all-notification::after {
+  content: '';
+  position: absolute;
+  border-top: 2px solid var(--black);
+  right: 15px;
+  top: 20px;
+  width: 50px;
+}
+
+.inbox-dropdown > .inbox-content > ul {
+  padding: 0;
+  margin: 0;
+}
+
+.inbox-dropdown > .inbox-content > ul > li {
+  padding: 10px;
+}
+
+.company-logo {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  border: 1px solid var(--light-gray);
+  background-size: cover;
+  text-align: center;
+  line-height: 60px;
+  font-size: 20px;
+  background-color: var(--light-gray);
+  display: inline-block;
+  float: left;
+}
+
+.details {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.details > .product-name {
+  color: var(--primary);
+  font-size: 16px;
+  letter-spacing: 1.25px;
+  font-weight: bold;
+  text-decoration: underline;
+  max-width: 300px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.details > .product-description {
+  font-size: 12px;
+  max-width: 300px;
+  padding-right: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

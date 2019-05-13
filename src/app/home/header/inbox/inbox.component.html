@@ -1,3 +1,69 @@
 <div class="col-xs-12 pad-0">
-  <div class="inbox"></div>
+  <div class="inbox open" (click)="toggleInboxSubMenu($event)">
+    <i class="fas fa-inbox"></i>
+  </div>
+  <div class="inbox-dropdown">
+    <div class="inbox-content">
+      <div class="inbox-content-header">
+        Notification
+      </div>
+      <ul class="favourite-task">
+        <li>
+          <div class="company-logo">CN</div>
+          <div class="details">
+            <div class="product-name">Test 1</div>
+            <div class="product-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, vero!</div>
+            <div class="rating">
+              <app-rating rate="3.5" color="red"></app-rating>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="company-logo">CN</div>
+          <div class="details">
+            <div class="product-name">Test 1</div>
+            <div class="product-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, vero!</div>
+            <div class="rating">
+              <app-rating rate="4.5" color="red"></app-rating>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="normal-task">
+        <li>
+          <div class="company-logo">CN</div>
+          <div class="details">
+            <div class="product-name">Test 1</div>
+            <div class="product-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, vero!</div>
+            <div class="rating">
+              <app-rating rate="1.5" color="red"></app-rating>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="company-logo">CN</div>
+          <div class="details">
+            <div class="product-name">Test 1</div>
+            <div class="product-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, vero!</div>
+            <div class="rating">
+              <app-rating rate="3.5" color="red"></app-rating>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="company-logo">CN</div>
+          <div class="details">
+            <div class="product-name">Test 1</div>
+            <div class="product-description"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, vero!</div>
+            <div class="rating">
+              <app-rating rate="2.5" color="red"></app-rating>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="see-all-notification">
+        See All Notification
+      </div>
+    </div>
+  </div>
 </div>

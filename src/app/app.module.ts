@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './home/header/header.component';
 import { SearchBarComponent } from './home/header/search-bar/search-bar.component';
 import { InboxComponent } from './home/header/inbox/inbox.component';
+import { RatingComponent } from './rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { InboxComponent } from './home/header/inbox/inbox.component';
     HomeComponent,
     HeaderComponent,
     SearchBarComponent,
-    InboxComponent
+    InboxComponent,
+    RatingComponent
   ],
   imports: [
     BrowserModule

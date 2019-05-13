@@ -3,12 +3,14 @@
   --white: #ffffff;
   --black: #333333;
   --red: #ff0000;
+  --green: #009900;
   --primary-off: #778beb;
   --primary: #546de5;
   --secondary-off: #63cdda;
   --secondary: #3dc1d3;
   --purple: #574b90;
   --purple-off: #786fa6;
+  --light-gray: #eee;
 }
 
 .pad-0 {

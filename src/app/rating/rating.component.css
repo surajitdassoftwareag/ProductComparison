@@ -1,0 +1,33 @@
+.rating {
+  float: left;
+}
+
+.rating-value {
+  padding-left: 10px;
+  padding-top: 5px;
+  letter-spacing: 1.5px;
+}
+
+.rate {
+  height: 25px;
+  width: 25px;
+  float: left;
+  font-size: 20px;
+}
+
+.rate.none {
+  background: url(./../../assets/star-regular.svg) no-repeat;
+  color: inherit;
+}
+
+.rate.half {
+  background: url(./../../assets/star-half-alt-solid.svg) no-repeat;
+  color: inherit;
+}
+
+.rate.full {
+  background: url(./../../assets/star-solid.svg) no-repeat;
+  color: inherit;
+}
+
+

@@ -12,4 +12,7 @@ export class InboxComponent implements OnInit {
   ngOnInit() {
   }
 
+  toggleInboxSubMenu(event) {
+    event.currentTarget.classList.toggle('open');
+  }
 }

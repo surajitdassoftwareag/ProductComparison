@@ -8,7 +8,6 @@
   background: var(--black);
   position: fixed;
   top: 60px;
-  z-index: 1;
   border-right: 10px solid var(--red);
   box-sizing: border-box;
 }

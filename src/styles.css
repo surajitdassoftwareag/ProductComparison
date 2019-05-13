@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --white: #ffffff;
+  --black: #333333;
+  --red: #ff0000;
+  --primary-off: #778beb;
+  --primary: #546de5;
+  --secondary-off: #63cdda;
+  --secondary: #3dc1d3;
+  --purple: #574b90;
+  --purple-off: #786fa6;
+}
+
+.pad-0 {
+  padding: 0 !important;
+}

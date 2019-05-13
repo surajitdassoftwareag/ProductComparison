@@ -1,0 +1,97 @@
+:root {
+  --scroll: 0;
+}
+
+.progress-bar {
+  height: 5px;
+  width: var(--scroll);
+  background: var(--black);
+  position: fixed;
+  top: 60px;
+  z-index: 1;
+  border-right: 10px solid var(--red);
+  box-sizing: border-box;
+}
+
+.progress-bar-percent {
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  font-size: 100px;
+  color: lightyellow;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.side-bar {
+  width: 100px;
+  top: 65px;
+  height: calc(100vh - 65px);
+  background: var(--primary-off);
+  position: fixed;
+  z-index: 2;
+}
+
+.side-bar > ul {
+  position: relative;
+  padding: 0px;
+}
+
+.side-bar > ul > li {
+  height: 80px;
+  width: 80px;
+  list-style: none;
+  background: linear-gradient(#aaa, #eee, #fff, var(--secondary-off));
+  position: relative;
+  margin-left: 10px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 0 15px 0 15px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.side-bar > ul > li > a {
+  text-decoration: none;
+  color: #333;
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, 0);
+  transition: all 0.5s;
+}
+
+.side-bar > ul > li:hover {
+  background: var(--secondary-off);
+}
+
+.side-bar > ul > li > a > .img-filter {
+  font-size: 32px;
+  opacity: 1;
+  color: #333;
+}
+
+.side-bar > ul > li > a > .label {
+  opacity: 0;
+  font-size: 8px;
+  bottom: 0px;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.side-bar > ul > li:hover > a > .img-filter {
+  color: var(--white);
+  text-shadow: 0px 0px 5px var(--red);
+}
+
+.side-bar > ul > li:hover > a > .label {
+  opacity: 1;
+  color: #fff;
+  font-size: 12px;
+  bottom: 5px;
+  text-shadow: 0px 0px 5px var(--black);
+}
+
+.side-bar + div {
+  padding-left: 100px !important;
+  width: 100%;
+}

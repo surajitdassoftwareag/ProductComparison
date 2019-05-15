@@ -43,14 +43,5 @@ export class RatingComponent implements OnInit {
         }
       }
     }
-
-    // if (this.rate === 0.5) {
-    //   this.rate1.nativeElement.classList.add('half');
-    // }
-    //   this.rate2.nativeElement.classList.add('none');
-    //   this.rate3.nativeElement.classList.add('none');
-    //   this.rate4.nativeElement.classList.add('none');
-    //   this.rate5.nativeElement.classList.add('none');
-    // }
   }
 }

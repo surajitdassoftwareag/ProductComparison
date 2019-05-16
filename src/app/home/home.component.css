@@ -213,11 +213,16 @@
 
 .suggestion-item .item .front, .suggestion-item .item .rear {
   position: absolute;
+  left: 10px;
+  top: 10px;
   height: 175px;
   width: 300px;
+  z-index: 0;
   border-radius: 10px 0 10px 0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   background: yellow;
+  filter: blur(0px);
+  transition: all 0.3s;
 }
 
 .suggestion-item .item .rear {
@@ -225,6 +230,21 @@
   top: 40px;
   z-index: -1;
   background: greenyellow;
+  filter: blur(10px);
+}
+
+.suggestion-item .item .switch.open ~ .front {
+  left: 85px !important;
+  top: 40px !important;
+  z-index: -1 !important;
+  filter: blur(10px) !important;
+}
+
+.suggestion-item .item .switch.open ~ .rear {
+  left: 10px !important;
+  top: 10px !important;
+  z-index: 0 !important;
+  filter: blur(0px) !important;
 }
 
 .suggestion-item .item .ingredients {
@@ -254,4 +274,55 @@
   position: absolute;
   bottom: 4px;
   left: 4px;
+}
+
+/** Toggle button css **/
+.toggle {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 30px;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(0deg, #ccc, #e5e5e5);
+  border-radius: 25px;
+}
+
+.toggle .inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(50px - 10px);
+  height: calc(30px - 10px);
+  transform: translate(-50%, -50%);
+  background: linear-gradient(0deg, #aaa, #c5c5c5);
+  border-radius: calc(25px - 10px)
+}
+
+.toggle .inner:before {
+  content: 'F';
+  position: absolute;
+  height: calc(30px - 10px);
+  width: calc(30px - 10px);
+  left: 0;
+  text-align: center;
+  line-height: calc(30px - 10px);
+  color: #aaa;
+  border-radius: 50%;
+  border: rgba(0,0,0,.5);
+  background: linear-gradient(0deg, #ccc, #fff);
+  transition: 0.5s;
+  cursor: pointer;
+  font-size: 0.8em;
+}
+
+.switch.open .toggle .inner {
+  background: linear-gradient(0deg, #009900, #00bb00);
+  box-shadow: 0 0 10px rgba(0,0,0,.2) inset;
+}
+
+.switch.open .toggle .inner:before {
+  left: calc(100% - 30px + 10px);
+  content: 'R';
+  color: #333;
 }

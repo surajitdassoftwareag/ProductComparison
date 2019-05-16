@@ -124,4 +124,8 @@ export class HomeComponent implements OnInit {
       anchor.click();
     }, 0);
   }
+
+  toggleFrontRear(event) {
+    event.currentTarget.classList.toggle('open');
+  }
 }

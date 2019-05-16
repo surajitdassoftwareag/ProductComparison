@@ -1,5 +1,5 @@
 <div class="col-xs-12 pad-0">
-  <div class="inbox open" (click)="toggleInboxSubMenu($event)">
+  <div class="inbox" (click)="toggleInboxSubMenu($event)">
     <i class="fas fa-inbox"></i>
   </div>
   <div class="inbox-dropdown">
@@ -9,14 +9,14 @@
       </div>
       <ul class="favourite-task">
         <li *ngFor="let product of favProducts; let idx = index;">
-          <div class="company-logo" [style.backgroundColor]="product.random.color">
-            <span *ngIf="product.image === undefined || product.image === ''">
+          <div class="company-logo" [style.backgroundColor]="product.color.bgcolor">
+            <span *ngIf="product.image === undefined || product.image === ''" [style.color]="product.color.fgcolor">
               {{product.firstName[0] + product.lastName[0]}}
             </span>
             <img *ngIf="product.image" src="product.image" />
           </div>
           <div class="details">
-            <div class="product-name">{{product.name}} {{product.random.decimal}}</div>
+            <div class="product-name">{{product.name}}</div>
             <div class="product-description">{{product.description}}</div>
             <div class="rating">
               <app-rating rate="{{product.rating}}"></app-rating>
@@ -26,14 +26,14 @@
       </ul>
       <ul class="normal-task">
         <li *ngFor="let product of products; let idx = index;">
-            <div class="company-logo" [style.backgroundColor]="product.random.color">
-            <span *ngIf="product.image === undefined || product.image === ''">
+            <div class="company-logo" [style.backgroundColor]="product.color.bgcolor">
+            <span *ngIf="product.image === undefined || product.image === ''" [style.color]="product.color.fgcolor">
               {{product.firstName[0] + product.lastName[0]}}
             </span>
             <img *ngIf="product.image" src="product.image" />
           </div>
           <div class="details">
-            <div class="product-name">{{product.name}} {{product.random.decimal}}</div>
+            <div class="product-name">{{product.name}}</div>
             <div class="product-description">{{product.description}}</div>
             <div class="rating">
               <app-rating rate="{{product.rating}}"></app-rating>

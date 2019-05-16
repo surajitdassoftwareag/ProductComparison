@@ -20,7 +20,7 @@ export class InboxComponent implements OnInit {
         image: '',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
         rating: '2.5',
-        random: this.utilityService.getRandomColor()
+        color: this.utilityService.getRandomColor()
       },
       {
         firstName: 'Surajit',
@@ -29,7 +29,7 @@ export class InboxComponent implements OnInit {
         image: '',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
         rating: '4.5',
-        random: this.utilityService.getRandomColor()
+        color: this.utilityService.getRandomColor()
       }
     ];
 
@@ -41,7 +41,7 @@ export class InboxComponent implements OnInit {
         image: '',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
         rating: '1.5',
-        random: this.utilityService.getRandomColor()
+        color: this.utilityService.getRandomColor()
       },
       {
         firstName: 'Surajit',
@@ -50,7 +50,7 @@ export class InboxComponent implements OnInit {
         image: '',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
         rating: '3.5',
-        random: this.utilityService.getRandomColor()
+        color: this.utilityService.getRandomColor()
       },
       {
         firstName: 'Surajit',
@@ -58,8 +58,8 @@ export class InboxComponent implements OnInit {
         name: 'Test 1',
         image: '',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-        rating: '4.5',
-        random: this.utilityService.getRandomColor()
+        rating: '2.5',
+        color: this.utilityService.getRandomColor()
       }
     ];
   }

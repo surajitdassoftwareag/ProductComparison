@@ -7,6 +7,9 @@ import { Component, OnInit, ElementRef, HostListener } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   percentage = 0;
+  advertisements: any;
+  productList: any;
+  suggestionList: any;
   @HostListener('window:scroll', [])
   setProgressBar() {
     const progressBar = document.querySelector('.progress-bar');
@@ -19,6 +22,106 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.advertisements = [
+      {
+        name: 'Advertisement 1',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+        image: '',
+        url: 'http://test'
+      },
+      {
+        name: 'Advertisement 2',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+        image: '',
+        url: 'http://test'
+      },
+      {
+        name: 'Advertisement 3',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+        image: '',
+        url: 'http://test'
+      },
+      {
+        name: 'Advertisement 1',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+        image: '',
+        url: 'http://test'
+      },
+      {
+        name: 'Advertisement 2',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+        image: '',
+        url: 'http://test'
+      },
+      {
+        name: 'Advertisement 3',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+        image: '',
+        url: 'http://test'
+      },
+      {
+        name: 'Advertisement 1',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+        image: '',
+        url: 'http://test'
+      },
+      {
+        name: 'Advertisement 2',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+        image: '',
+        url: 'http://test'
+      },
+      {
+        name: 'Advertisement 3',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+        image: '',
+        url: 'http://test'
+      },
+      {
+        name: 'Advertisement 1',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+        image: '',
+        url: 'http://test'
+      },
+      {
+        name: 'Advertisement 2',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+        image: '',
+        url: 'http://test'
+      },
+      {
+        name: 'Advertisement 1',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+        image: '',
+        url: 'http://test'
+      },
+      {
+        name: 'Advertisement 2',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+        image: '',
+        url: 'http://test'
+      },
+      {
+        name: 'Advertisement 3',
+        description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
+        image: '',
+        url: 'http://test'
+      }
+    ];
+
+    this.productList = [
+      {},{},{},{},{},{},{},{},{},{},{},{},{},
+    ];
+
+    this.suggestionList = this.productList;
   }
 
+  openAdvertismentList(url) {
+    const anchor = document.createElement('a');
+    anchor.setAttribute('href', url);
+    anchor.target = '_blank';
+    setTimeout(() => {
+      anchor.click();
+    }, 0);
+  }
 }

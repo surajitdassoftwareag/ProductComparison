@@ -1,4 +1,6 @@
 import { Component, OnInit, ElementRef, HostListener } from '@angular/core';
+import { MatDialog } from '@angular/material';
+import { IngredientDetailsComponent } from './ingredient-details/ingredient-details.component';
 
 @Component({
   selector: 'app-home',
@@ -19,7 +21,7 @@ export class HomeComponent implements OnInit {
     progressBar['style'].setProperty('--scroll', this.percentage + '%' );
   }
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
 
   ngOnInit() {
     this.advertisements = [
@@ -110,7 +112,26 @@ export class HomeComponent implements OnInit {
     ];
 
     this.productList = [
-      {},{},{},{},{},{},{},{},{},{},{},{},{},
+      {
+        caption: 'Name',
+        title: 'Colgate'
+      },
+      {
+        caption: 'Name',
+        title: 'Colgate'
+      },
+      {
+        caption: 'Name',
+        title: 'Colgate'
+      },
+      {
+        caption: 'Name',
+        title: 'Colgate'
+      },
+      {
+        caption: 'Name',
+        title: 'Colgate'
+      }
     ];
 
     this.suggestionList = this.productList;
@@ -127,5 +148,15 @@ export class HomeComponent implements OnInit {
 
   toggleFrontRear(event) {
     event.currentTarget.classList.toggle('open');
+  }
+
+  openIngredientBox(data) {
+    const dialogRef = this.dialog.open(IngredientDetailsComponent, {
+      width: '30vw',
+      data,
+      disableClose: true,
+      panelClass: 'ingredientDetailsComponentClass'
+      }
+    );
   }
 }

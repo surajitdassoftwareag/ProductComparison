@@ -70,7 +70,7 @@
               <div class="suggestion-list">
                 <div class="suggestion-item" *ngFor="let prod of productList; let pudIdx = index;">
                   <div class="item">
-                    <div class="ingredients">
+                    <div class="ingredients" title="Ingredients details..." (click)="openIngredientBox(prod)">
                       <i class="fas fa-info"></i>
                     </div>
                     <div class="switch" (click)="toggleFrontRear($event)">
@@ -78,8 +78,12 @@
                           <div class="inner"></div>
                       </div>
                     </div>
-                    <div class="front"></div>
-                    <div class="rear"></div>
+                    <div class="front">
+                      Test Front
+                    </div>
+                    <div class="rear">
+                      Test Rear
+                    </div>
                   </div>
                 </div>
               </div>

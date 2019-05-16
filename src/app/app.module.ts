@@ -6,6 +6,9 @@ import { HeaderComponent } from './home/header/header.component';
 import { SearchBarComponent } from './home/header/search-bar/search-bar.component';
 import { InboxComponent } from './home/header/inbox/inbox.component';
 import { RatingComponent } from './rating/rating.component';
+import { IngredientDetailsComponent } from './home/ingredient-details/ingredient-details.component';
+import { MatDialogModule } from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,12 +17,18 @@ import { RatingComponent } from './rating/rating.component';
     HeaderComponent,
     SearchBarComponent,
     InboxComponent,
-    RatingComponent
+    RatingComponent,
+    IngredientDetailsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MatDialogModule,
+    BrowserAnimationsModule
   ],
   providers: [],
+  entryComponents: [
+    IngredientDetailsComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

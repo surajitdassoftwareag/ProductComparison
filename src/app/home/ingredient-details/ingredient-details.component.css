@@ -1,0 +1,62 @@
+.ingredientDetailsComponentClass {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  background: white !important;
+}
+
+.ingredientDetailsComponentClass .mat-dialog-container {
+  padding: 0;
+  margin: 0;
+}
+
+.ingredient-container {
+  max-height: 400px;
+}
+
+.header {
+  background: var(--primary-off);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: white;
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.details-content {
+  max-height: 320px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.details-content .row:nth-child(odd) {
+  background: var(--light-gray);
+}
+
+.details-content .bold {
+  font-weight: bold;
+}
+
+.details-content .ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.actions {
+  position: absolute;
+  bottom: 0;
+  height: 40px;
+  background: var(--light-gray);
+}
+
+button.action.ok {
+  padding: 5px 10px;
+  font-weight: bold;
+  background: var(--light-gray);
+  float: right;
+  padding-right: 10px;
+}

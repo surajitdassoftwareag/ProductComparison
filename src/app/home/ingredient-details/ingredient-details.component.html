@@ -1,0 +1,18 @@
+<div class="col-xs-12 pad-0 ingredient-container">
+  <div class="header">
+    Ingredient Details
+  </div>
+  <div class="details-content">
+    <div class="row" *ngFor="let ingre of ingredients; let idx = index;">
+      <div class="col-xs-4 bold">
+        {{ingre.caption}}
+      </div>
+      <div class="col-xs-8 ellipsis">
+        {{ingre.title}}
+      </div>
+    </div>
+  </div>
+  <div class="actions">
+    <button class="action ok" (click)="close()">Ok</button>
+  </div>
+</div>

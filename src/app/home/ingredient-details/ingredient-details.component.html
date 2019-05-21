@@ -3,7 +3,10 @@
     Ingredient Details
   </div>
   <div class="details-content">
-    <div class="row" *ngFor="let ingre of ingredients; let idx = index;">
+    <div class="no-details" *ngIf="ingredients === undefined || ingredients.length === 0">
+      * No Details Found
+    </div>
+    <div class="row items" *ngFor="let ingre of ingredients; let idx = index;">
       <div class="col-xs-4 bold">
         {{ingre.caption}}
       </div>
@@ -13,6 +16,6 @@
     </div>
   </div>
   <div class="actions">
-    <button class="action ok" (click)="close()">Ok</button>
+    <button class="form-control action ok" (click)="close()">Ok</button>
   </div>
 </div>

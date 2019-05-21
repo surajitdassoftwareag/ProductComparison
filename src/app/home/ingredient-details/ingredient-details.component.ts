@@ -48,6 +48,14 @@ export class IngredientDetailsComponent implements OnInit {
       {
         caption: 'Name',
         title: 'Colgate'
+      },
+      {
+        caption: 'Name',
+        title: 'Colgate'
+      },
+      {
+        caption: 'Name',
+        title: 'Colgate1 Colgate1 Colgate1 Colgate1 Colgate1 Colgate1 Colgate1 Colgate1 Colgate1 Colgate1 Colgate1 Colgate1 Colgate1 '
       }
     ];
   }

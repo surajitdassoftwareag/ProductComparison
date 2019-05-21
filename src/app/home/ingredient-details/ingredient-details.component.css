@@ -4,6 +4,7 @@
   left: 50% !important;
   transform: translate(-50%, -50%) !important;
   background: white !important;
+  z-index: 501;
 }
 
 .ingredientDetailsComponentClass .mat-dialog-container {
@@ -29,10 +30,18 @@
 .details-content {
   max-height: 320px;
   overflow-y: auto;
-  padding: 10px;
+  padding: 0 10px;
+  margin-bottom: 40px;
+  overflow-x: hidden;
 }
 
-.details-content .row:nth-child(odd) {
+.details-content .items {
+  height: 24px;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.details-content .items:nth-child(odd) {
   background: var(--light-gray);
 }
 
@@ -50,6 +59,7 @@
   position: absolute;
   bottom: 0;
   height: 40px;
+  width: 100%;
   background: var(--light-gray);
 }
 
@@ -59,4 +69,20 @@ button.action.ok {
   background: var(--light-gray);
   float: right;
   padding-right: 10px;
+  width: 100px;
+  height: 30px;
+  margin: 5px 10px 0 0;
+}
+
+button.action.ok:hover {
+  color: white;
+  background: var(--primary-off);
+}
+
+.no-details {
+  color: red;
+  font-size: 20px;
+  padding-left: 5px;
+  height: 32px;
+  line-height: 32px;
 }

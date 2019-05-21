@@ -78,6 +78,16 @@
                           <div class="inner"></div>
                       </div>
                     </div>
+                    <div class="legend">
+                      <div class="front-legend">
+                        <span>F</span>
+                        ront
+                      </div>
+                      <div class="rear-legend">
+                        <span>R</span>
+                        ear
+                      </div>
+                    </div>
                     <div class="front">
                       Test Front
                     </div>
@@ -94,7 +104,10 @@
               </div>
               <div class="suggestion-list">
                 <div class="suggestion-item" *ngFor="let sug of suggestionList; let sugIdx = index;">
-                  Test
+                  <div class="item-content">
+                    <div class="image"></div>
+                    <div class="content"></div>
+                  </div>
                 </div>
               </div>
             </div>

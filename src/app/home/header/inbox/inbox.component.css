@@ -71,7 +71,7 @@
 .inbox-content > .see-all-notification {
   line-height: 40px;
   height: 40px;
-  background: linear-gradient(var(--light-gray), var(--white), var(--white), var(--white), var(--light-gray));
+  background: linear-gradient(var(--light-grey), var(--white), var(--white), var(--white), var(--light-grey));
   color: var(--black);
   text-align: center;
   font-weight: bold;
@@ -113,7 +113,7 @@
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  border: 1px solid var(--light-gray);
+  border: 1px solid var(--light-grey);
   background-size: cover;
   text-align: center;
   line-height: 60px;

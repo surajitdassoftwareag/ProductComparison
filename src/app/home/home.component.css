@@ -267,7 +267,7 @@
   text-align: center;
   font-size: 12px;
   border-radius: 50%;
-  background: var(--light-gray);
+  background: var(--light-grey);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   transition: all 0.3s;
@@ -398,15 +398,101 @@
 .product-suggestion .suggestion-list .suggestion-item .item-content {
   height: 300px;
   width: 100%;
+  position: relative;
+}
+
+.product-suggestion .suggestion-list .suggestion-item .item-content .arrow {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  font-size: 1.5em;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.product-suggestion .suggestion-list .suggestion-item .item-content .arrow:hover {
+  transform: rotate(180deg);
+  transform-origin: 25%;
+  top: 92px;
+  color: white;
+}
+
+.product-suggestion .suggestion-list .suggestion-item .item-content .arrow:hover ~ .content::after {
+  background: var(--primary);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3) inset;
 }
 
 .product-suggestion .suggestion-list .suggestion-item .item-content .image {
   height: 100px;
   margin-bottom: 10px;
   border: 1px solid rgba(0, 0, 0, 0.3);
+  position: relative;
+  transition: all 0.3s;
+}
+
+.product-suggestion .suggestion-list .suggestion-item .item-content .image:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.product-suggestion .suggestion-list .suggestion-item .item-content .image::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  bottom: -11px;
+  z-index: 3;
+  background: var(--white);
 }
 
 .product-suggestion .suggestion-list .suggestion-item .item-content .content {
   height: calc(100% - 110px);
-  border: 1px solid;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px;
 }
+
+.product-suggestion .suggestion-list .suggestion-item .item-content .content:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.product-suggestion .suggestion-list .suggestion-item .item-content .content::before {
+  content: '';
+  height: 50px;
+  width: 50px;
+  z-index: 2;
+  background: var(--white);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  top: calc(100px - 20px);
+  transform: translateX(-50%);
+}
+
+.product-suggestion .suggestion-list .suggestion-item .item-content .content::after {
+  content: '';
+  height: 30px;
+  width: 30px;
+  color: var(--black);
+  line-height: 26px;
+  font-size: 1.5em;
+  text-align: center;
+  z-index: 4;
+  background: var(--light-grey);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3) inset;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  top: calc(100px - 10px);
+  transform: translateX(-50%);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+

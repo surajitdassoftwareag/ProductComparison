@@ -42,7 +42,7 @@
 }
 
 .details-content .items:nth-child(odd) {
-  background: var(--light-gray);
+  background: var(--light-grey);
 }
 
 .details-content .bold {
@@ -60,13 +60,13 @@
   bottom: 0;
   height: 40px;
   width: 100%;
-  background: var(--light-gray);
+  background: var(--light-grey);
 }
 
 button.action.ok {
   padding: 5px 10px;
   font-weight: bold;
-  background: var(--light-gray);
+  background: var(--light-grey);
   float: right;
   padding-right: 10px;
   width: 100px;

@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
   --white: #ffffff;
+  --light-black: #555555;
   --black: #333333;
   --red: #ff0000;
   --green: #009900;
@@ -11,6 +12,8 @@
   --purple: #574b90;
   --purple-off: #786fa6;
   --light-grey: #eee;
+  --light-orange: #F05E23;
+  --orange: #FF2800;
 }
 
 .pad-0 {

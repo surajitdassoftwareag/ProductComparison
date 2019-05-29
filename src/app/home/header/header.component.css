@@ -1,7 +1,8 @@
 .header {
-  background: var(--secondary-off);
+  background: var(--light-black);
   position: fixed;
   z-index: 100;
+  border-bottom: 0.1px solid var(--white);
 }
 
 .ht-60 {
@@ -10,7 +11,7 @@
 
 .logo > img {
     margin: -10px 5px 5px 5px;
-    background: linear-gradient(var(--white), var(--secondary-off), var(--white));
+    background: linear-gradient(var(--white), var(--light-orange), var(--white));
     border-radius: 50%;
     padding: 3px 5px;
     border: 1px solid rgba(0, 0, 0, 0.25);
@@ -20,7 +21,7 @@
   font-size: 32px;
   font-weight: bold;
   color: white;
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.7);
+  text-shadow: 1px 1px 10px var(--orange);
   padding-left: 10px;
   height: 60px;
   line-height: 60px;

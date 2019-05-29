@@ -1,7 +1,7 @@
 .inbox {
-  height: 30px;
-  width: 30px;
-  margin: 15px;
+  height: 40px;
+  width: 40px;
+  margin: 10px 10px 10px 15px;
   box-sizing: border-box;
   background: transparent;
   border-radius: 5px;
@@ -12,11 +12,12 @@
 }
 
 .inbox > .fas {
-  color: white;
-  width: 20px;
-  height: 20px;
-  line-height: 30px;
+  color: var(--white);
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   padding-left: 6px;
+  font-size: 24px;
 }
 
 .inbox:active {
@@ -24,12 +25,12 @@
 }
 
 .inbox:active > .fas{
-  color: var(--black);
+  color: var(--light-orange);
 }
 
 .inbox-dropdown {
   position: absolute;
-  top: 45px;
+  top: 50px;
   left: 10px;
   padding: 5px;
   opacity: 0;
@@ -60,7 +61,7 @@
 
 .inbox-content > .inbox-content-header {
   height: 40px;
-  background: var(--primary-off);
+  background: var(--orange);
   line-height: 40px;
   color: var(--white);
   padding-left: 10px;
@@ -69,35 +70,34 @@
 }
 
 .inbox-content > .see-all-notification {
-  line-height: 40px;
+  display: flex;
+  width: 100%;
+  align-items: center;
   height: 40px;
-  background: linear-gradient(var(--light-grey), var(--white), var(--white), var(--white), var(--light-grey));
-  color: var(--black);
-  text-align: center;
-  font-weight: bold;
-  font-size: 12px;
-  cursor: pointer;
-  position: relative;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-bottom: 2px solid var(--light-orange);
+  background: var(--light-black);
+  color: var(--white);
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
 }
 
-.see-all-notification::before {
-  content: '';
-  position: absolute;
-  border-top: 2px solid var(--black);
-  left: 15px;
-  top: 20px;
-  width: 50px;
+.inbox-content > .see-all-notification:hover {
+  background: var(--black);
+  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.1) inset;
 }
 
-.see-all-notification::after {
+.see-all-notification::before, .see-all-notification::after {
   content: '';
-  position: absolute;
-  border-top: 2px solid var(--black);
-  right: 15px;
-  top: 20px;
-  width: 50px;
+  flex: 1;
+  /* background: var(--white); */
+  border-top: 1px solid var(--light-orange);
+  border-bottom: 1px solid var(--white);
+  height: 5px;
+  margin: 0 5px;
+  box-sizing: border-box;
 }
 
 .inbox-dropdown > .inbox-content > ul {
@@ -107,6 +107,11 @@
 
 .inbox-dropdown > .inbox-content > ul > li {
   padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.inbox-dropdown > .inbox-content > ul > li:hover {
+  background: var(--light-grey);
 }
 
 .company-logo {

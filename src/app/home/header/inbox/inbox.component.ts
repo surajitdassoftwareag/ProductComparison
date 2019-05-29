@@ -54,11 +54,11 @@ export class InboxComponent implements OnInit {
       },
       {
         firstName: 'Surajit',
-        lastName: 'Das',
+        lastName: 'SAG',
         name: 'Test 1',
         image: '',
         description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-        rating: '2.5',
+        rating: '4.5',
         color: this.utilityService.getRandomColor()
       }
     ];

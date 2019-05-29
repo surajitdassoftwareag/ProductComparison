@@ -6,6 +6,12 @@
     <div class="inbox-content">
       <div class="inbox-content-header">
         Notification
+        <div class="switch">
+          <div class="toggle" (click)="toggleInboxSubMenu($event)">
+            <div class="ball"></div>
+          </div>
+          Faviours Only
+        </div>
       </div>
       <ul class="favourite-task">
         <li *ngFor="let product of favProducts; let idx = index;">

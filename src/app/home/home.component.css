@@ -30,7 +30,7 @@
   width: 100px;
   top: 65px;
   height: calc(100vh - 65px);
-  background: var(--primary-off);
+  background: var(--light-orange);
   position: fixed;
   z-index: 2;
 }
@@ -116,7 +116,7 @@
   font-size: 24px;
   padding-left: 10px;
   font-weight: bold;
-  background: var(--primary-off);
+  background: var(--light-orange);
   color: var(--white);
   height: 50px;
   line-height: 50px;
@@ -133,7 +133,7 @@
   font-size: 24px;
   padding-left: 10px;
   font-weight: bold;
-  background: var(--primary-off);
+  background: var(--light-orange);
   color: var(--white);
   height: 50px;
   line-height: 50px;
@@ -149,7 +149,7 @@
 .advertisement .title {
   font-size: 22px;
   color: var(--white);
-  background: var(--primary-off);
+  background: var(--light-orange);
   padding: 10px;
   border-radius: 0px 5px 0px 0px;
 }
@@ -274,7 +274,7 @@
 }
 
 .suggestion-item .item .ingredients:hover {
-  background: var(--black);
+  background: var(--light-orange);
   color: var(--white);
 }
 
@@ -425,7 +425,7 @@
 }
 
 .product-suggestion .suggestion-list .suggestion-item .item-content .arrow:hover ~ .content::after {
-  background: var(--primary);
+  background: var(--light-orange);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3) inset;
 }
 

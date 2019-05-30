@@ -28,86 +28,86 @@ export class HomeComponent implements OnInit {
       {
         name: 'Advertisement 1',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-        image: '',
-        url: 'http://test'
+        image: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg',
+        url: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg'
       },
       {
         name: 'Advertisement 2',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-        image: '',
-        url: 'http://test'
+        image: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg',
+        url: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg'
       },
       {
         name: 'Advertisement 3',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-        image: '',
-        url: 'http://test'
+        image: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg',
+        url: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg'
       },
       {
         name: 'Advertisement 1',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-        image: '',
-        url: 'http://test'
+        image: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg',
+        url: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg'
       },
       {
         name: 'Advertisement 2',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-        image: '',
-        url: 'http://test'
+        image: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg',
+        url: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg'
       },
       {
         name: 'Advertisement 3',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-        image: '',
-        url: 'http://test'
+        image: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg',
+        url: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg'
       },
       {
         name: 'Advertisement 1',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-        image: '',
-        url: 'http://test'
+        image: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg',
+        url: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg'
       },
       {
         name: 'Advertisement 2',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-        image: '',
-        url: 'http://test'
+        image: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg',
+        url: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg'
       },
       {
         name: 'Advertisement 3',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-        image: '',
-        url: 'http://test'
+        image: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg',
+        url: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg'
       },
       {
         name: 'Advertisement 1',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-        image: '',
-        url: 'http://test'
+        image: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg',
+        url: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg'
       },
       {
         name: 'Advertisement 2',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-        image: '',
-        url: 'http://test'
+        image: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg',
+        url: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg'
       },
       {
         name: 'Advertisement 1',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-        image: '',
-        url: 'http://test'
+        image: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg',
+        url: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg'
       },
       {
         name: 'Advertisement 2',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-        image: '',
-        url: 'http://test'
+        image: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg',
+        url: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg'
       },
       {
         name: 'Advertisement 3',
         description: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit.',
-        image: '',
-        url: 'http://test'
+        image: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg',
+        url: 'https://images-na.ssl-images-amazon.com/images/I/819t4Tg5gIL._SY355_.jpg'
       }
     ];
 
@@ -135,15 +135,6 @@ export class HomeComponent implements OnInit {
     ];
 
     this.suggestionList = this.productList;
-  }
-
-  openAdvertismentList(url) {
-    const anchor = document.createElement('a');
-    anchor.setAttribute('href', url);
-    anchor.target = '_blank';
-    setTimeout(() => {
-      anchor.click();
-    }, 0);
   }
 
   toggleFrontRear(event) {

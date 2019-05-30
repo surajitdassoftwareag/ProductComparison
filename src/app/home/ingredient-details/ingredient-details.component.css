@@ -17,7 +17,7 @@
 }
 
 .header {
-  background: var(--primary-off);
+  background: var(--light-orange);
   text-transform: uppercase;
   letter-spacing: 1.5px;
   color: white;
@@ -76,7 +76,7 @@ button.action.ok {
 
 button.action.ok:hover {
   color: white;
-  background: var(--primary-off);
+  background: var(--light-orange);
 }
 
 .no-details {

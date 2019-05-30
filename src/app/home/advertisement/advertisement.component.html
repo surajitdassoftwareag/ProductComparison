@@ -1,0 +1,26 @@
+<div class="col-xs-12 pad-0 advertisement">
+  <div class="title">
+    <span>
+      Advertisement
+    </span>
+    <span class="gear">
+      <i class="fas fa-cog"></i>
+    </span>
+  </div>
+  <div class="col-xs-12 pad-0 advertiment-container">
+    <div class="col-xs-12 pad-0 advertisement-list" *ngFor="let advertisement of advertisements; let adIdx = index;">
+      <img src="{{advertisement.image}}" />
+      <div class="details">
+        <div class="advertisement-title">
+          {{advertisement.name}}
+        </div>
+        <div class="advertisement-description">
+          {{advertisement.description}}
+        </div>
+        <div class="link" title="{{advertisement.url}}" (click)="openAdvertismentList(advertisement.url)">
+          Open Link
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

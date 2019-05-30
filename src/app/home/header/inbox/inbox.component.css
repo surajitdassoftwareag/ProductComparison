@@ -43,7 +43,7 @@
 }
 
 .inbox-dropdown > .inbox-content {
-  min-width: 250px;
+  min-width: 380px;
   display: inline-block;
   transform: translateY(-105%);
   height: 0;
@@ -61,12 +61,13 @@
 
 .inbox-content > .inbox-content-header {
   height: 40px;
-  background: var(--orange);
+  background: var(--light-orange);
   line-height: 40px;
   color: var(--white);
   padding-left: 10px;
   font-weight: bold;
   letter-spacing: 2px;
+  transition: color backgroundColor 0.3s;
 }
 
 .inbox-content > .inbox-content-header .switch {
@@ -142,12 +143,17 @@
 .see-all-notification::before, .see-all-notification::after {
   content: '';
   flex: 1;
-  /* background: var(--white); */
   border-top: 1px solid var(--light-orange);
   border-bottom: 1px solid var(--white);
   height: 5px;
   margin: 0 5px;
   box-sizing: border-box;
+  transition: border 0.3s;
+}
+
+.see-all-notification:hover::before, .see-all-notification:hover::after {
+  border-bottom: 1px solid var(--light-orange);
+  border-top: 1px solid var(--white);
 }
 
 .inbox-dropdown > .inbox-content > ul {
@@ -180,6 +186,7 @@
 .details {
   display: inline-block;
   padding-left: 10px;
+  width: calc(100% - 60px);
 }
 
 .details > .product-name {
@@ -188,7 +195,6 @@
   letter-spacing: 1.25px;
   font-weight: bold;
   text-decoration: underline;
-  max-width: 300px;
   cursor: pointer;
   overflow: hidden;
   white-space: nowrap;
@@ -197,7 +203,6 @@
 
 .details > .product-description {
   font-size: 12px;
-  max-width: 300px;
   padding-right: 10px;
   overflow: hidden;
   white-space: nowrap;

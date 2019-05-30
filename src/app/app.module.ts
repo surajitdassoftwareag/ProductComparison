@@ -1,3 +1,4 @@
+import { ThemesComponent } from './home/header/themes/themes.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
@@ -8,7 +9,8 @@ import { InboxComponent } from './home/header/inbox/inbox.component';
 import { RatingComponent } from './rating/rating.component';
 import { IngredientDetailsComponent } from './home/ingredient-details/ingredient-details.component';
 import { MatDialogModule } from '@angular/material';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { UserInfoComponent } from './home/header/user-info/user-info.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     SearchBarComponent,
     InboxComponent,
     RatingComponent,
-    IngredientDetailsComponent
+    IngredientDetailsComponent,
+    ThemesComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,

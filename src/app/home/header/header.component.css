@@ -11,19 +11,30 @@
 
 .logo > img {
     margin: -10px 5px 5px 5px;
-    background: linear-gradient(var(--white), var(--light-orange), var(--white));
+    background: conic-gradient(var(--white), var(--light-orange), var(--light-orange), var(--white));
     border-radius: 50%;
     padding: 3px 5px;
-    border: 1px solid rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3) inset;
 }
 
 .title {
   font-size: 32px;
   font-weight: bold;
   color: white;
-  text-shadow: 1px 1px 10px var(--orange);
+  text-shadow: 1px 1px 10px var(--light-orange);
   padding-left: 10px;
   height: 60px;
   line-height: 60px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.inbox {
+  width: 75px;
+}
+
+.themes {
+  width: calc(33.33% - 225px);
+}
+.user-info {
+  width: 150px;
 }

@@ -1,0 +1,8 @@
+<div class="theme-container">
+  <div class="title">
+    Themes
+  </div>
+  <ul>
+    <li *ngFor="let color of colors" title="{{color}}" [style.backgroundColor]="color"></li>
+  </ul>
+</div>

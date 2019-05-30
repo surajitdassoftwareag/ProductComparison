@@ -12,6 +12,7 @@ import { MatDialogModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { UserInfoComponent } from './home/header/user-info/user-info.component';
 import { AdvertisementComponent } from './home/advertisement/advertisement.component';
+import { AssistanceComponent } from './home/assistance/assistance.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { AdvertisementComponent } from './home/advertisement/advertisement.compo
     IngredientDetailsComponent,
     ThemesComponent,
     UserInfoComponent,
-    AdvertisementComponent
+    AdvertisementComponent,
+    AssistanceComponent
   ],
   imports: [
     BrowserModule,

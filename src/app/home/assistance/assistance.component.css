@@ -1,0 +1,153 @@
+.assistant-container {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  z-index: 999;
+  width: 400px;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.assistant-container .header {
+  position: relative;
+  top: 0;
+  height: 40px;
+  line-height: 40px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: var(--light-orange);
+  color: var(--white);
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  z-index: 1000;
+}
+
+.assistant-container .header .minimize {
+  float: right;
+  margin-right: 15px;
+  margin-top: 18px;
+  height: 4px;
+  width: 20px;
+  background: var(--white);
+  cursor: pointer;
+}
+
+.assistant-container .header .minimize::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  margin-right: 15px;
+  transform: rotate(-90deg);
+  margin-top: 18px;
+  height: 4px;
+  width: 20px;
+  background: var(--white);
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.assistant-container .content {
+  height: 0px;
+  background: white;
+  transform: translateY(calc(-100% - 40px));
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.assistant-container .header.open .minimize::after {
+  opacity: 0;
+}
+
+.assistant-container .header.open + .content {
+  transform: translateY(0);
+  height: 350px;
+}
+
+.assistant-container .content .discussion {
+  max-height: 300px;
+  min-height: 300px;
+  overflow-y: auto;
+  background: #ccc;
+}
+
+.assistant-container .content .discussion > div {
+  position: relative;
+  height: 20px;
+}
+
+.assistant-container .content .discussion .user, .assistant-container .content .discussion .assistance {
+  margin: 10px 20px;
+  padding: 5px;
+  text-align: left;
+  background: var(--white);
+  position: absolute;
+  max-width: 90%;
+}
+
+.assistant-container .content .discussion .user::after {
+  /* content: ''; */
+  height: 0;
+  width: 0;
+  border: 10px solid var(--light-black);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.assistant-container .content .discussion .assistance {
+  right: 0;
+  color: var(--light-orange);
+}
+
+.assistant-container .content .chat-options {
+  height: 50px;
+  padding: 10px;
+  background: var(--light-grey);
+  opacity: 0;
+  transition: all 0.3s;
+  transition-delay: 0.3s;
+}
+
+.assistant-container .header.open + .content .chat-options {
+  opacity: 1;
+}
+
+.assistant-container .content .chat-options .input-box {
+  height: 30px;
+  background: var(--white);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  width: calc(100% - 40px);
+  display: inline-block;
+}
+
+.assistant-container .content .chat-options .input-box input {
+  all: unset;
+  height: 30px;
+  padding-left: 15px;
+  width: calc(100% - 60px);
+}
+
+.assistant-container .content .chat-options .input-box .submit {
+  float: right;
+  display: inline-block;
+  color: var(--light-black);
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+  padding-right: 10px;
+}
+
+.assistant-container .content .chat-options .mic {
+  background: var(--light-black);
+  height: 30px;
+  line-height: 30px;
+  width: 30px;
+  float: right;
+  border-radius: 50%;
+  color: var(--white);
+  text-align: center;
+  font-size: 18px;
+}

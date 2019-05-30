@@ -1,0 +1,28 @@
+<div class="col-xs-12 pad-0 assistant-container">
+  <div class="header open">
+    <span>
+      Assistance
+    </span>
+    <span class="minimize" (click)="openChat($event)"></span>
+  </div>
+  <div class="content">
+    <div class="discussion">
+      <div *ngFor="let dis of discussions">
+        <div [ngClass]="dis.type === 'user' ? 'user' : 'assistance'">
+          {{dis.text}}
+        </div>
+      </div>
+    </div>
+    <div class="chat-options">
+      <div class="input-box">
+        <input type="text" />
+        <div class="submit">
+          <i class="fas fa-sign-in-alt"></i>
+        </div>
+      </div>
+      <div class="mic">
+        <i class="fas fa-microphone"></i>
+      </div>
+    </div>
+  </div>
+</div>
